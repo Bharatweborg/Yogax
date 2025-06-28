@@ -111,12 +111,12 @@
             background-color: rgba(255, 255, 255, 0.95);
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             z-index: 1000;
-            padding: 15px 0;
+            padding: 10px 0;
             transition: var(--transition);
         }
 
         header.scrolled {
-            padding: 10px 0;
+            padding: 7px 0;
             background-color: rgba(255, 255, 255, 0.98);
         }
 
@@ -143,6 +143,7 @@
         .logo i {
             margin-right: 10px;
             color: var(--primary);
+            display: inline;
         }
 
         .nav-center {
@@ -861,6 +862,10 @@
             .mobile-menu-btn {
                 display: block;
             }
+            /* Hide signup button on mobile */
+            .signup-btn {
+                display: none;
+            }
 
             .nav-center {
                 position: fixed;
@@ -978,7 +983,8 @@
             </div>
             
             <div class="nav-right">
-                <a href="#" class="btn">Sign Up</a>
+                <!-- Added signup-btn class to this button -->
+                <a href="#" class="btn signup-btn">Sign Up</a>
                 <button class="mobile-menu-btn" id="mobileMenuBtn">
                     <i class="fas fa-bars"></i>
                 </button>
